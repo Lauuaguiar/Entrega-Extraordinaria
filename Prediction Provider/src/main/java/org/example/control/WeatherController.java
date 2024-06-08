@@ -32,7 +32,7 @@ public class WeatherController {
         try {
             double lat = Double.parseDouble(parts[0]);
             double lon = Double.parseDouble(parts[1]);
-            locations.add(new Location(lat, lon, parts[2].trim()));
+            locations.add(new Location(lat, lon, parts[2].trim(), parts[3].trim()));
         } catch (NumberFormatException e) {
             System.err.println("Error converting values in the CSV file: " + e.getMessage());
         }
