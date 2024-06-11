@@ -10,15 +10,15 @@ public class Weather {
     private final String ss;
     private final Instant predictionTime;
 
-    private final float temperature;
-    private final float precipitation;
-    private final float wind;
+    private final double temperature;
+    private final double precipitation;
+    private final double wind;
     private final int humidity;
     private final int clouds;
 
     private final Location location;
 
-    public Weather(String ss, Instant predictionTime, float temperature, float precipitation, float wind, int humidity, int clouds, Location location) {
+    public Weather(String ss, Instant predictionTime, double temperature, double precipitation, double wind, int humidity, int clouds, Location location) {
         this.ts = Instant.now();
         this.ss = ss;
         this.predictionTime = predictionTime;
