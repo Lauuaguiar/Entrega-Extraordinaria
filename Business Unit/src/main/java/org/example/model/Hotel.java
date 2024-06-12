@@ -1,11 +1,14 @@
 package org.example.model;
 
+
 public class Hotel {
-    private String id;
-    private String name;
-    private int stars;
-    private String ss, ts;
-    private Location location;
+    private final String id;
+    private final String name;
+    private final int stars;
+    private final String ss;
+
+    private final String ts;
+    private final Location location;
 
     public Hotel(String id, String name, int stars, String ss, String ts, Location location) {
         this.id = id;
@@ -39,4 +42,5 @@ public class Hotel {
     public Location getLocation() {
         return location;
     }
+
 }

@@ -62,11 +62,11 @@ public class SqliteHotelStore implements HotelStore {
                 }
             }
             try (PreparedStatement insertStatement = connection.prepareStatement(insertQuery)) {
-                insertStatement.setString(1, hotel.getId());
-                insertStatement.setString(2, hotel.getName());
-                insertStatement.setInt(3, hotel.getStars());
-                insertStatement.setString(4, hotel.getSs());
-                insertStatement.setString(5, hotel.getTs());
+                insertStatement.setString(1, hotel.getTs());
+                insertStatement.setString(2, hotel.getId());
+                insertStatement.setString(3, hotel.getName());
+                insertStatement.setInt(4, hotel.getStars());
+                insertStatement.setString(5, hotel.getSs());
                 insertStatement.executeUpdate();
             }
         } catch (SQLException e) {

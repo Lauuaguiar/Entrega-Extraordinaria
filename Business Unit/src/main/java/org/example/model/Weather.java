@@ -57,4 +57,6 @@ public class Weather {
     public String getTs() {
         return ts;
     }
+
+    public String getSs() { return ss; }
 }
