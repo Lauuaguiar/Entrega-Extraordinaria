@@ -10,14 +10,14 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 
-public class HotelControl {
+public class HotelController {
 
-    private HotelSearcher hotelSearcher;
-    private HotelPublisher hotelPublisher;
+    private AmadeusSupplier hotelSearcher;
+    private JmsHotelPublisher hotelPublisher;
 
-    public HotelControl(String apikey, String apiSecret) {
-        this.hotelSearcher = new HotelSearcher(apikey, apiSecret);
-        this.hotelPublisher = new HotelPublisher();
+    public HotelController(String apikey, String apiSecret) {
+        this.hotelSearcher = new AmadeusSupplier(apikey, apiSecret);
+        this.hotelPublisher = new JmsHotelPublisher();
     }
 
     public void execute(List<Location> locationList){
@@ -27,12 +27,13 @@ public class HotelControl {
             for (Location location : locationList) {
                 try {
                     List<Hotel> hotels = getHotelSearcher().getHotels(location);
-                    for (Hotel hotel : hotels){
+                    for (Hotel hotel : hotels) {
                         getHotelPublisher().publishHotel(hotel);
                     }
-                } catch (HotelExecutionException e) {
-                    System.out.println("Execution Error");
+                } catch (Exception e) {
+                    throw new RuntimeException(e);
                 }
+                System.out.println("The task is finished");
             }
 
         };
@@ -60,7 +61,7 @@ public class HotelControl {
         }
     }
 
-    public void processWeatherFile(String csvFile) {
+    public void processHotelFile(String csvFile) {
         try {
             List<Location> locationList = readCSV(csvFile);
             execute(locationList);
@@ -69,11 +70,11 @@ public class HotelControl {
         }
     }
 
-    private HotelSearcher getHotelSearcher() {
+    private AmadeusSupplier getHotelSearcher() {
         return hotelSearcher;
     }
 
-    private HotelPublisher getHotelPublisher() {
+    private JmsHotelPublisher getHotelPublisher() {
         return hotelPublisher;
     }
 }

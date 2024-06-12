@@ -25,8 +25,11 @@ public class HotelStoreBuilder {
     public void hotelStoreBuild() throws MyEventException {
         String url = ActiveMQConnection.DEFAULT_BROKER_URL;
         MessageConsumer consumer = null;
-        consumer = getMessageConsumer(url);
-
+        try {
+            consumer = getMessageConsumer(url);
+        } catch (MyEventException e) {
+            System.out.println("Connection Error");
+        }
         String eventDirectory = path + "/datalake/eventstore/location.Hotels";
 
         try {
@@ -35,11 +38,11 @@ public class HotelStoreBuilder {
                     String jsonEvent = ((TextMessage) message).getText();
                     writeEvent(jsonEvent, eventDirectory);
                 } catch (JMSException | MyEventException e) {
-                    System.out.println("Error while writing");;
+                    throw new RuntimeException(e);
                 }
             });
         } catch (JMSException e) {
-            throw new MyEventException("Error");
+            throw new MyEventException("Error setting listener");
         }
     }
 
@@ -79,5 +82,4 @@ public class HotelStoreBuilder {
             throw new MyEventException("Error");
         }
     }
-
 }

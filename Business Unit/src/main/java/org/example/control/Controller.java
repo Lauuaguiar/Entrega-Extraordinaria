@@ -29,7 +29,7 @@ public class Controller {
             }
         } else {
             System.out.println("No messages received. Invoking DatalakeProcessor...");
-            List<Hotel> hotelList = DatalakeProcessor.readFilesInFolderForPOI(directoryPath + File.separator + "location.Hotels" + File.separator + "hotel-provider");
+            List<Hotel> hotelList = DatalakeProcessor.readFilesInFolderForHotels(directoryPath + File.separator + "location.Hotels" + File.separator + "hotel-provider");
             List<Weather> weatherList = DatalakeProcessor.readFilesInFolderForWeather(directoryPath + File.separator + "prediction.Weather" + File.separator + "prediction-provider");
             SqliteWeatherStore sqliteWeatherStore = new SqliteWeatherStore();
             for (Weather weather : weatherList) {

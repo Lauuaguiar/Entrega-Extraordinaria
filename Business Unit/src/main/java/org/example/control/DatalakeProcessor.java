@@ -11,7 +11,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 public class DatalakeProcessor {
-    public static List<Hotel> readFilesInFolderForPOI(String folderPath) {
+    public static List<Hotel> readFilesInFolderForHotels(String folderPath) {
         List<Hotel> poiList = new ArrayList<>();
         Gson gson = new Gson();
         File folder = new File(folderPath);
@@ -31,7 +31,7 @@ public class DatalakeProcessor {
                 }
             }
         } else {
-            System.out.println("The folder is empty or does not exist.");
+            System.out.println("The hotel data folder is empty or does not exist.");
         }
         return poiList;
     }
@@ -55,7 +55,7 @@ public class DatalakeProcessor {
                 }
             }
         } else {
-            System.out.println("The folder is empty or does not exist.");
+            System.out.println("The weather data folder is empty or does not exist.");
         }
         return weatherList;
     }

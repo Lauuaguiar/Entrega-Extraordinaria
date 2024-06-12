@@ -1,7 +1,8 @@
 package org.example.model;
 
 public class Location {
-    private final double lat, lon;
+    private final double lat;
+    private final double lon;
 
     private final String island;
     private final String iataCode;

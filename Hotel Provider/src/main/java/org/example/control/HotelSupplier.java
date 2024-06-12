@@ -5,7 +5,7 @@ import org.example.model.Location;
 
 import java.util.List;
 
-public interface HotelProvider {
-    List<Hotel> getHotels(Location location) throws HotelExecutionException;
+public interface HotelSupplier {
+    List<Hotel> getHotels(Location location);
 }
 
