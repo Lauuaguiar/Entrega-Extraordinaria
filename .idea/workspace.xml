@@ -6,10 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="98be1afb-3ac9-40a0-9641-e763540949ce" name="Changes" comment="Operational adjustments">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Business Unit/src/main/java/org/example/control/SqliteHotelStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/Business Unit/src/main/java/org/example/control/SqliteHotelStore.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Business Unit/src/main/java/org/example/model/Hotel.java" beforeDir="false" afterPath="$PROJECT_DIR$/Business Unit/src/main/java/org/example/model/Hotel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Business Unit/src/main/java/org/example/model/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/Business Unit/src/main/java/org/example/model/Location.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Business Unit/src/main/java/org/example/model/Weather.java" beforeDir="false" afterPath="$PROJECT_DIR$/Business Unit/src/main/java/org/example/model/Weather.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -214,7 +210,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718177348709</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Operational adjustments">
+      <option name="closed" value="true" />
+      <created>1718178668033</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1718178668033</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
