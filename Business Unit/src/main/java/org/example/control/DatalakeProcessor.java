@@ -16,23 +16,15 @@ public class DatalakeProcessor {
         Gson gson = new Gson();
         File folder = new File(folderPath);
         File[] files = folder.listFiles();
-        if (files != null) {
-            for (File file : files) {
+        if (files != null) {for (File file : files) {
                 if (file.isFile()) {
                     try (BufferedReader br = new BufferedReader(new FileReader(file))) {
                         String line;
                         while ((line = br.readLine()) != null) {
                             Hotel hotel = gson.fromJson(line, Hotel.class);
-                            poiList.add(hotel);
-                        }
-                    } catch (IOException e) {
-                        e.printStackTrace();
-                    }
-                }
-            }
-        } else {
-            System.out.println("The hotel data folder is empty or does not exist.");
-        }
+                            poiList.add(hotel);}
+                    } catch (IOException e) {e.printStackTrace();}}}
+        } else {System.out.println("The hotel data folder is empty or does not exist.");}
         return poiList;
     }
     public static List<Weather> readFilesInFolderForWeather(String folderPath) {
@@ -40,23 +32,15 @@ public class DatalakeProcessor {
         Gson gson = new Gson();
         File folder = new File(folderPath);
         File[] files = folder.listFiles();
-        if (files != null) {
-            for (File file : files) {
+        if (files != null) {for (File file : files) {
                 if (file.isFile()) {
                     try (BufferedReader br = new BufferedReader(new FileReader(file))) {
                         String line;
                         while ((line = br.readLine()) != null) {
                             Weather weather = gson.fromJson(line, Weather.class);
-                            weatherList.add(weather);
-                        }
-                    } catch (IOException e) {
-                        e.printStackTrace();
-                    }
-                }
-            }
-        } else {
-            System.out.println("The weather data folder is empty or does not exist.");
-        }
+                            weatherList.add(weather);}
+                        } catch (IOException e) {e.printStackTrace();}}}
+        } else {System.out.println("The weather data folder is empty or does not exist.");}
         return weatherList;
     }
 }

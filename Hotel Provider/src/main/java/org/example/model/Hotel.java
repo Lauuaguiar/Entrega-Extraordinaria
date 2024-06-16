@@ -21,29 +21,4 @@ public class Hotel {
         this.ts = Instant.now();
         this.location = location;
     }
-
-
-    public String getId() {
-        return id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public int getStars() {
-        return stars;
-    }
-
-    public String getSs() {
-        return ss;
-    }
-
-    public Instant getPredictionTime() {
-        return predictionTime;
-    }
-
-    public Location getLocation() {
-        return location;
-    }
 }

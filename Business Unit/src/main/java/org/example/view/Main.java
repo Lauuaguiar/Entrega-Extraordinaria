@@ -21,5 +21,5 @@ public class Main {
         SqliteWeatherStore weatherStore = new SqliteWeatherStore();
         UserInteractive userInteractive = new UserInteractive(hotelStore, weatherStore);
         userInteractive.startInteraction();
-            }
+    }
 }

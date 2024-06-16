@@ -18,28 +18,22 @@ public class Controller {
         if (!receivedMessages.isEmpty()) {
             List<Hotel> hotelList = new ArrayList<>();
             List<Weather> weatherList = new ArrayList<>();
-
             SqliteWeatherStore sqliteWeatherStore = new SqliteWeatherStore();
             for (Weather weather : weatherList) {
-                sqliteWeatherStore.save(weather, weather.getLocation(), weather.getTs());
-            }
+                sqliteWeatherStore.save(weather, weather.getLocation(), weather.getTs());}
             SqliteHotelStore sqliteHotelStore = new SqliteHotelStore();
             for (Hotel hotel : hotelList) {
-                sqliteHotelStore.save(hotel, hotel.getLocation());
-            }
+                sqliteHotelStore.save(hotel, hotel.getLocation());}
         } else {
             System.out.println("No messages received. Invoking DatalakeProcessor...");
             List<Hotel> hotelList = DatalakeProcessor.readFilesInFolderForHotels(directoryPath + File.separator + "location.Hotels" + File.separator + "hotel-provider");
             List<Weather> weatherList = DatalakeProcessor.readFilesInFolderForWeather(directoryPath + File.separator + "prediction.Weather" + File.separator + "prediction-provider");
             SqliteWeatherStore sqliteWeatherStore = new SqliteWeatherStore();
             for (Weather weather : weatherList) {
-                sqliteWeatherStore.save(weather, weather.getLocation(), weather.getTs());
-            }
+                sqliteWeatherStore.save(weather, weather.getLocation(), weather.getTs());}
             SqliteHotelStore sqliteHotelStore = new SqliteHotelStore();
             for (Hotel hotel : hotelList) {
-                sqliteHotelStore.save(hotel, hotel.getLocation());
-            }
-        }
+                sqliteHotelStore.save(hotel, hotel.getLocation());}}
     }
     public void setTopics(List<String> topics) {
         this.topics = topics;

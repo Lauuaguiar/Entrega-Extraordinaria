@@ -3,13 +3,11 @@ public class Location {
     private final double lat;
     private final double lon;
     private final String island;
-    private final String iataCode;
 
-    public Location(double lat, double lon, String island, String iataCode) {
+    public Location(double lat, double lon, String island) {
         this.lat = lat;
         this.lon = lon;
         this.island = island;
-        this.iataCode = iataCode;
     }
 
     public String getIsland() {
@@ -23,10 +21,5 @@ public class Location {
                 ", lon=" + lon +
                 ", island='" + island + '\'' +
                 '}';
-    }
-
-
-    public String getIataCode() {
-        return iataCode;
     }
 }
