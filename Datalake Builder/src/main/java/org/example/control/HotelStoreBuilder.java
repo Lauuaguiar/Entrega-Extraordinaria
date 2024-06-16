@@ -22,13 +22,13 @@ public class HotelStoreBuilder {
         this.path = path;
     }
 
-    public void hotelStoreBuild() throws MyEventException {
+    public void hotelStoreBuild(){
         String url = ActiveMQConnection.DEFAULT_BROKER_URL;
         MessageConsumer consumer = null;
         try {
             consumer = getMessageConsumer(url);
-        } catch (MyEventException e) {
-            System.out.println("Connection Error");
+        } catch (Exception e) {
+            throw new RuntimeException(e);
         }
         String eventDirectory = path + "/datalake/eventstore/location.Hotels";
 
@@ -37,16 +37,16 @@ public class HotelStoreBuilder {
                 try {
                     String jsonEvent = ((TextMessage) message).getText();
                     writeEvent(jsonEvent, eventDirectory);
-                } catch (JMSException | MyEventException e) {
+                } catch (JMSException e) {
                     throw new RuntimeException(e);
                 }
             });
         } catch (JMSException e) {
-            throw new MyEventException("Error setting listener");
+            throw new RuntimeException(e);
         }
     }
 
-    private static MessageConsumer getMessageConsumer(String url) throws MyEventException {
+    private static MessageConsumer getMessageConsumer(String url){
         try {
             ConnectionFactory connectionFactory = new ActiveMQConnectionFactory(url);
             Connection connection = connectionFactory.createConnection();
@@ -59,11 +59,11 @@ public class HotelStoreBuilder {
 
             return session.createDurableSubscriber(destination, "hotelStoreBuilder");
         } catch (JMSException e) {
-            throw new MyEventException("Error");
+            throw new RuntimeException(e);
         }
     }
 
-    private static void writeEvent(String jsonEvent, String eventDirectory) throws MyEventException {
+    private static void writeEvent(String jsonEvent, String eventDirectory) {
         JsonObject jsonObjectEvent = JsonParser.parseString(jsonEvent).getAsJsonObject();
 
         String ss = jsonObjectEvent.get("ss").getAsString();
@@ -79,7 +79,7 @@ public class HotelStoreBuilder {
         try (FileWriter writer = new FileWriter(eventFilePath, true)){
             writer.write(jsonEvent + System.lineSeparator());
         } catch (IOException e) {
-            throw new MyEventException("Error");
+            throw new RuntimeException(e);
         }
     }
 }

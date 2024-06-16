@@ -10,7 +10,7 @@ public class DatalakeControl {
         this.hotelStoreBuilder = new HotelStoreBuilder(path);
     }
 
-    public void createDataLake() throws MyEventException {
+    public void createDataLake(){
         weatherStoreBuilder.weatherStoreBuild();
         hotelStoreBuilder.hotelStoreBuild();
         System.out.println("The task is finished");

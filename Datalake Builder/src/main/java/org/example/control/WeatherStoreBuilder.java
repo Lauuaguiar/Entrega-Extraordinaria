@@ -21,13 +21,13 @@ public class WeatherStoreBuilder {
         this.path = path;
     }
 
-    public void weatherStoreBuild() throws MyEventException {
+    public void weatherStoreBuild(){
         String url = ActiveMQConnection.DEFAULT_BROKER_URL;
         MessageConsumer consumer = null;
         try {
             consumer = getMessageConsumer(url);
-        } catch (MyEventException e) {
-            System.out.println("Connection Error");
+        } catch (Exception e) {
+            throw new RuntimeException(e);
         }
         String eventDirectory = path + "/datalake/eventstore/prediction.Weather";
 
@@ -36,16 +36,16 @@ public class WeatherStoreBuilder {
                 try {
                     String jsonEvent = ((TextMessage) message).getText();
                     writeEvent(jsonEvent, eventDirectory);
-                } catch (JMSException | MyEventException e) {
+                } catch (JMSException e) {
                     throw new RuntimeException(e);
                 }
             });
         } catch (JMSException e) {
-            throw new MyEventException("Error setting listener");
+            throw new RuntimeException(e);
         }
     }
 
-    private static MessageConsumer getMessageConsumer(String url) throws MyEventException {
+    private static MessageConsumer getMessageConsumer(String url) {
         try {
             ConnectionFactory connectionFactory = new ActiveMQConnectionFactory(url);
             Connection connection = connectionFactory.createConnection();
@@ -58,11 +58,11 @@ public class WeatherStoreBuilder {
 
             return session.createDurableSubscriber(destination, "weatherStoreBuilder");
         } catch (JMSException e) {
-            throw new MyEventException("Error");
+            throw new RuntimeException(e);
         }
     }
 
-    private static void writeEvent(String jsonEvent, String eventDirectory) throws MyEventException {
+    private static void writeEvent(String jsonEvent, String eventDirectory) {
         JsonObject jsonObjectEvent = JsonParser.parseString(jsonEvent).getAsJsonObject();
 
         String ss = jsonObjectEvent.get("ss").getAsString();
@@ -78,7 +78,7 @@ public class WeatherStoreBuilder {
         try (FileWriter writer = new FileWriter(eventFilePath, true)){
             writer.write(jsonEvent + System.lineSeparator());
         } catch (IOException e) {
-            throw new MyEventException("Error");
+            throw new RuntimeException(e);
         }
     }
 }
