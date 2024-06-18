@@ -1,4 +1,4 @@
-package org.Laura;
+package org.laura;
 
 public class Main {
     public static void main(String[] args) {

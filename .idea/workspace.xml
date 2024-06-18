@@ -53,12 +53,12 @@
   </component>
   <component name="RunManager" selected="Application.Datalake">
     <configuration name="Business" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="org.Laura.view.Main" />
+      <option name="MAIN_CLASS_NAME" value="org.laura.view.Main" />
       <module name="BusinessUnit" />
       <option name="PROGRAM_PARAMETERS" value="C:\Users\laura\OneDrive\Escritorio\DACD_extraordinaria" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.Laura.view.*" />
+          <option name="PATTERN" value="org.laura.view.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -81,12 +81,12 @@
       </method>
     </configuration>
     <configuration name="Datalake" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="org.Laura.control.Main" />
+      <option name="MAIN_CLASS_NAME" value="org.laura.control.Main" />
       <module name="DatalakeBuilder" />
       <option name="PROGRAM_PARAMETERS" value="C:\Users\laura\OneDrive\Escritorio\DACD_extraordinaria" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.Laura.view.*" />
+          <option name="PATTERN" value="org.laura.view.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -95,12 +95,12 @@
       </method>
     </configuration>
     <configuration name="Hotel" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="org.Laura.control.Main" />
+      <option name="MAIN_CLASS_NAME" value="org.laura.control.Main" />
       <module name="HotelProvider" />
       <option name="PROGRAM_PARAMETERS" value="45GaFMFgx6o7lzG5AJcvnYpjcKkOvefg Heu14yelGs41GjSB" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.Laura.control.*" />
+          <option name="PATTERN" value="org.laura.control.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -109,12 +109,12 @@
       </method>
     </configuration>
     <configuration name="Prediction" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="org.Laura.control.Main" />
+      <option name="MAIN_CLASS_NAME" value="org.laura.control.Main" />
       <module name="PredictionProvider" />
       <option name="PROGRAM_PARAMETERS" value="e7d1901b3c05487745b73ffeb772e234" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.Laura.view.*" />
+          <option name="PATTERN" value="org.laura.view.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
