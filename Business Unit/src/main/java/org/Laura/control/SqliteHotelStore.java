@@ -31,7 +31,7 @@ public class SqliteHotelStore implements HotelStore {
     private void createTable(Connection connection, String tableName) {
         try {
             if (!tableExist(connection, tableName)) {
-                String createTableQuery = "CREATE TABLE \"" + tableName + "\" (" + "\"ID\" TEXT PRIMARY KEY, " + "\"Name\" TEXT, " + "\"Stars\" INTEGER, " + "\"SS\" TEXT, " + "\"TS\" TEXT);";
+                String createTableQuery = "CREATE TABLE \"" + tableName + "\" (" + "\"ID\" TEXT PRIMARY KEY, " + "\"Name\" TEXT, " + "\"Stars\" INTEGER, " + "\"TS\" TEXT);";
                 executeStatement(connection, createTableQuery);}
         } catch (SQLException e) {System.out.println("Error creating the table: " + e.getMessage());}
     }
@@ -43,7 +43,7 @@ public class SqliteHotelStore implements HotelStore {
             createTable(connection, hotel.getLocation().getIsland());
             String tableName = hotel.getLocation().getIsland();
             String selectQuery = "SELECT * FROM \"" + tableName + "\" WHERE id=?";
-            String insertQuery = "INSERT INTO \"" + tableName + "\" (\"ID\", \"Name\", \"Stars\", \"SS\", \"TS\") VALUES (?, ?, ?, ?, ?)";
+            String insertQuery = "INSERT INTO \"" + tableName + "\" (\"ID\", \"Name\", \"Stars\", \"TS\") VALUES (?, ?, ?, ?)";
             try (PreparedStatement selectStatement = connection.prepareStatement(selectQuery)) {
                 selectStatement.setString(1, hotel.getId());
                 try (ResultSet resultSet = selectStatement.executeQuery()) {
@@ -53,7 +53,6 @@ public class SqliteHotelStore implements HotelStore {
                 insertStatement.setString(2, hotel.getId());
                 insertStatement.setString(3, hotel.getName());
                 insertStatement.setInt(4, hotel.getStars());
-                insertStatement.setString(5, hotel.getSs());
                 insertStatement.executeUpdate();}
         } catch (SQLException e) {System.out.println("Error interacting with the database: " + e.getMessage());}
     }
@@ -81,9 +80,8 @@ public class SqliteHotelStore implements HotelStore {
                 while (resultSet.next()) {
                     String id = resultSet.getString("id");
                     String name = resultSet.getString("name");
-                    String ss = resultSet.getString("ss");
                     String ts = resultSet.getString("ts");
-                    hotels.add(new Hotel(id, name, stars, ss, ts, location));
+                    hotels.add(new Hotel(id, name, stars, ts, location));
                 }
             }
         } catch (SQLException e) {
