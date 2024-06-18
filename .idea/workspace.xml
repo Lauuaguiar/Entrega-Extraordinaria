@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="98be1afb-3ac9-40a0-9641-e763540949ce" name="Changes" comment="Corrections after the tutorial: change all package names to lowercase.">
-      <change beforePath="$PROJECT_DIR$/Business Unit/src/main/java/org/laura/control/ActiveMQTopicSubscriber.java" beforeDir="false" afterPath="$PROJECT_DIR$/Business Unit/src/main/java/org/laura/control/ActiveMQTopicSubscriber.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Business Unit/src/main/java/org/laura/control/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/Business Unit/src/main/java/org/laura/control/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Business Unit/src/main/java/org/laura/control/TopicSubscriber.java" beforeDir="false" afterPath="$PROJECT_DIR$/Business Unit/src/main/java/org/laura/control/TopicSubscriber.java" afterDir="false" />
+    <list default="true" id="98be1afb-3ac9-40a0-9641-e763540949ce" name="Changes" comment="Corrections after the tutorial: removal of the message wait time from the Business-Unit.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Prediction Provider/src/main/java/org/laura/control/OpenWeatherMapSupplier.java" beforeDir="false" afterPath="$PROJECT_DIR$/Prediction Provider/src/main/java/org/laura/control/OpenWeatherMapSupplier.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +51,7 @@
       <recent name="org.example.model" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Datalake">
+  <component name="RunManager" selected="Application.Prediction">
     <configuration name="Business" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="org.laura.view.Main" />
       <module name="BusinessUnit" />
@@ -131,10 +130,10 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Business" />
         <item itemvalue="Application.Datalake" />
-        <item itemvalue="Application.Hotel" />
         <item itemvalue="Application.Prediction" />
+        <item itemvalue="Application.Hotel" />
+        <item itemvalue="Application.Business" />
         <item itemvalue="Application.Business" />
       </list>
     </recent_temporary>
@@ -276,7 +275,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718683269761</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Corrections after the tutorial: removal of the message wait time from the Business-Unit.">
+      <option name="closed" value="true" />
+      <created>1718683524057</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1718683524057</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -305,6 +312,7 @@
     <MESSAGE value="Corrections after the tutorial: removal of &quot;predictionTime&quot; from the Hotel object." />
     <MESSAGE value="Corrections after the tutorial: remove &quot;SS&quot; from Hotel.db." />
     <MESSAGE value="Corrections after the tutorial: change all package names to lowercase." />
-    <option name="LAST_COMMIT_MESSAGE" value="Corrections after the tutorial: change all package names to lowercase." />
+    <MESSAGE value="Corrections after the tutorial: removal of the message wait time from the Business-Unit." />
+    <option name="LAST_COMMIT_MESSAGE" value="Corrections after the tutorial: removal of the message wait time from the Business-Unit." />
   </component>
 </project>

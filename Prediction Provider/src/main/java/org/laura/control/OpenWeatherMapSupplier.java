@@ -35,11 +35,11 @@ public class OpenWeatherMapSupplier implements WeatherSupplier {
         JsonObject main = listItem.getAsJsonObject("main");
         JsonObject clouds = listItem.getAsJsonObject("clouds");
         JsonObject wind = listItem.getAsJsonObject("wind");
-        float temperature = main.get("temp").getAsFloat();
-        float precipitation = listItem.get("pop").getAsFloat();
+        double temperature = main.get("temp").getAsDouble();
+        double precipitation = listItem.get("pop").getAsDouble();
         int cloudCoverage = clouds.get("all").getAsInt();
         int humidity = main.get("humidity").getAsInt();
-        float windSpeed = wind.get("speed").getAsFloat();
+        double windSpeed = wind.get("speed").getAsDouble();
         String ss = "prediction-provider";
         return new Weather( ss, predictionTs, temperature, precipitation, windSpeed, humidity, cloudCoverage, location);
     }
