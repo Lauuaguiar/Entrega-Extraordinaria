@@ -18,4 +18,16 @@ public class Hotel {
         this.ts = Instant.now();
         this.location = location;
     }
+
+    @Override
+    public String toString() {
+        return "Hotel{" +
+                "ts=" + ts +
+                ", id='" + id + '\'' +
+                ", name='" + name + '\'' +
+                ", stars=" + stars +
+                ", ss='" + ss + '\'' +
+                ", location=" + location +
+                '}';
+    }
 }

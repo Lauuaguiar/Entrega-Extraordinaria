@@ -20,7 +20,7 @@ public class AmadeusSupplier implements HotelSupplier {
         this.apiSecret = apiSecret;
     }
     public static String getApi(Location location) {
-        return String.format("https://test.api.amadeus.com/v1/reference-data/locations/hotels/by-geocode?latitude=%f&longitude=%f&radius=50&radiusUnit=KM&ratings=1,2,3,4,5&hotelSource=ALL",
+        return String.format("https://test.api.amadeus.com/v1/reference-data/locations/hotels/by-geocode?latitude=%f&longitude=%f&radius=50&radiusUnit=KM&ratings=3,4,5&hotelSource=ALL",
                 location.getLat(), location.getLon());
     }
     public static JsonObject getJson(String api, String token) throws IOException {
@@ -35,7 +35,10 @@ public class AmadeusSupplier implements HotelSupplier {
     private Hotel createHotel(JsonObject hotelData, Location location) {
         JsonObject geoCode = hotelData.getAsJsonObject("geoCode");
         String provider = "hotel-provider";
-        return new Hotel(hotelData.get("hotelId").getAsString(), hotelData.get("name").getAsString(), hotelData.get("rating").getAsInt(), provider, new Location(geoCode.get("latitude").getAsDouble(), geoCode.get("longitude").getAsDouble(), location.getIsland(), hotelData.get("iataCode").getAsString()));
+        return new Hotel(hotelData.get("hotelId").getAsString(),
+                hotelData.get("name").getAsString(), hotelData.get("rating").getAsInt(),
+                provider, new Location(geoCode.get("latitude").getAsDouble(),
+                geoCode.get("longitude").getAsDouble(), location.getIsland(), hotelData.get("iataCode").getAsString()));
     }
 
     @Override
