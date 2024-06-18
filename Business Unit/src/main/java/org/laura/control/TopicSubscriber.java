@@ -4,5 +4,5 @@ import jakarta.jms.Message;
 
 import java.util.List;
 public interface TopicSubscriber {
-    List<Message> subscribe(List<String> topics) ;
+    List<Message> subscriber(List<String> topics) ;
 }

@@ -11,19 +11,23 @@ public class ActiveMQTopicSubscriber implements TopicSubscriber {
         session = connection.createSession(false, Session.AUTO_ACKNOWLEDGE);
     }
     @Override
-    public List<Message> subscribe(List<String> topics) {
+    public List<Message> subscriber(List<String> topics) {
         List<Message> receivedMessages = new ArrayList<>();
-        try {System.out.println("Waiting for messages...");
+        try {
             for (String topic : topics) {
                 MessageConsumer subscriber = createSubscriber(topic);
                 subscriber.setMessageListener(message -> {
                     if (message instanceof TextMessage) {
                         receivedMessages.add(message);
-                    }});}Thread.sleep(40000);
-        } catch (InterruptedException | JMSException e) {
+                    }
+                });
+            }
+        } catch (JMSException e) {
             System.err.println("Error in subscription: " + e.getMessage());
-        }return receivedMessages;
+        }
+        return receivedMessages;
     }
+
     private Connection createConnection(String brokerURL) throws JMSException {
         ConnectionFactory connectionFactory = new ActiveMQConnectionFactory(brokerURL);
         Connection connection = connectionFactory.createConnection();

@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="98be1afb-3ac9-40a0-9641-e763540949ce" name="Changes" comment="Corrections after the tutorial: removal of &quot;predictionTime&quot; from the Hotel object.">
-      <change beforePath="$PROJECT_DIR$/Business Unit/src/main/java/org/Laura/control/SqliteHotelStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/Business Unit/src/main/java/org/Laura/control/SqliteHotelStore.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Business Unit/src/main/java/org/Laura/model/Hotel.java" beforeDir="false" afterPath="$PROJECT_DIR$/Business Unit/src/main/java/org/Laura/model/Hotel.java" afterDir="false" />
+    <list default="true" id="98be1afb-3ac9-40a0-9641-e763540949ce" name="Changes" comment="Corrections after the tutorial: change all package names to lowercase.">
+      <change beforePath="$PROJECT_DIR$/Business Unit/src/main/java/org/laura/control/ActiveMQTopicSubscriber.java" beforeDir="false" afterPath="$PROJECT_DIR$/Business Unit/src/main/java/org/laura/control/ActiveMQTopicSubscriber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Business Unit/src/main/java/org/laura/control/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/Business Unit/src/main/java/org/laura/control/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Business Unit/src/main/java/org/laura/control/TopicSubscriber.java" beforeDir="false" afterPath="$PROJECT_DIR$/Business Unit/src/main/java/org/laura/control/TopicSubscriber.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -259,7 +260,23 @@
       <option name="project" value="LOCAL" />
       <updated>1718682902662</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Corrections after the tutorial: remove &quot;SS&quot; from Hotel.db.">
+      <option name="closed" value="true" />
+      <created>1718683184407</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1718683184407</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Corrections after the tutorial: change all package names to lowercase.">
+      <option name="closed" value="true" />
+      <created>1718683269761</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1718683269761</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -286,6 +303,8 @@
     <MESSAGE value="Exceptions adjustments" />
     <MESSAGE value="Removal of zombie code and code optimization" />
     <MESSAGE value="Corrections after the tutorial: removal of &quot;predictionTime&quot; from the Hotel object." />
-    <option name="LAST_COMMIT_MESSAGE" value="Corrections after the tutorial: removal of &quot;predictionTime&quot; from the Hotel object." />
+    <MESSAGE value="Corrections after the tutorial: remove &quot;SS&quot; from Hotel.db." />
+    <MESSAGE value="Corrections after the tutorial: change all package names to lowercase." />
+    <option name="LAST_COMMIT_MESSAGE" value="Corrections after the tutorial: change all package names to lowercase." />
   </component>
 </project>

@@ -14,7 +14,7 @@ public class Controller {
     private String directoryPath;
     public void processMessages() throws JMSException {
         ActiveMQTopicSubscriber subscriber = new ActiveMQTopicSubscriber(brokerURL);
-        List<Message> receivedMessages = subscriber.subscribe(topics);
+        List<Message> receivedMessages = subscriber.subscriber(topics);
         if (!receivedMessages.isEmpty()) {
             List<Hotel> hotelList = new ArrayList<>();
             List<Weather> weatherList = new ArrayList<>();
