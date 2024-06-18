@@ -6,42 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="98be1afb-3ac9-40a0-9641-e763540949ce" name="Changes" comment="Removal of zombie code and code optimization">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Business Unit/src/main/java/org/example/control/ActiveMQTopicSubscriber.java" beforeDir="false" afterPath="$PROJECT_DIR$/Business Unit/src/main/java/org/Laura/control/ActiveMQTopicSubscriber.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Business Unit/src/main/java/org/example/control/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/Business Unit/src/main/java/org/Laura/control/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Business Unit/src/main/java/org/example/control/DatalakeProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/Business Unit/src/main/java/org/Laura/control/DatalakeProcessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Business Unit/src/main/java/org/example/control/HotelStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/Business Unit/src/main/java/org/Laura/control/HotelStore.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Business Unit/src/main/java/org/example/control/SqliteHotelStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/Business Unit/src/main/java/org/Laura/control/SqliteHotelStore.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Business Unit/src/main/java/org/example/control/SqliteWeatherStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/Business Unit/src/main/java/org/Laura/control/SqliteWeatherStore.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Business Unit/src/main/java/org/example/control/TopicSubscriber.java" beforeDir="false" afterPath="$PROJECT_DIR$/Business Unit/src/main/java/org/Laura/control/TopicSubscriber.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Business Unit/src/main/java/org/example/control/WeatherStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/Business Unit/src/main/java/org/Laura/control/WeatherStore.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Business Unit/src/main/java/org/example/model/Hotel.java" beforeDir="false" afterPath="$PROJECT_DIR$/Business Unit/src/main/java/org/Laura/model/Hotel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Business Unit/src/main/java/org/example/model/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/Business Unit/src/main/java/org/Laura/model/Location.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Business Unit/src/main/java/org/example/model/Weather.java" beforeDir="false" afterPath="$PROJECT_DIR$/Business Unit/src/main/java/org/Laura/model/Weather.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Business Unit/src/main/java/org/example/view/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Business Unit/src/main/java/org/Laura/view/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Business Unit/src/main/java/org/example/view/UserInteractive.java" beforeDir="false" afterPath="$PROJECT_DIR$/Business Unit/src/main/java/org/Laura/view/UserInteractive.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Datalake Builder/src/main/java/org/example/control/DatalakeControl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Datalake Builder/src/main/java/org/Laura/control/DatalakeControl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Datalake Builder/src/main/java/org/example/control/HotelStoreBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/Datalake Builder/src/main/java/org/Laura/control/HotelStoreBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Datalake Builder/src/main/java/org/example/control/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Datalake Builder/src/main/java/org/Laura/control/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Datalake Builder/src/main/java/org/example/control/WeatherStoreBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/Datalake Builder/src/main/java/org/Laura/control/WeatherStoreBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hotel Provider/src/main/java/org/example/control/AmadeusSupplier.java" beforeDir="false" afterPath="$PROJECT_DIR$/Hotel Provider/src/main/java/org/Laura/control/AmadeusSupplier.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hotel Provider/src/main/java/org/example/control/HotelController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Hotel Provider/src/main/java/org/Laura/control/HotelController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hotel Provider/src/main/java/org/example/control/HotelPublish.java" beforeDir="false" afterPath="$PROJECT_DIR$/Hotel Provider/src/main/java/org/Laura/control/HotelPublish.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hotel Provider/src/main/java/org/example/control/HotelSupplier.java" beforeDir="false" afterPath="$PROJECT_DIR$/Hotel Provider/src/main/java/org/Laura/control/HotelSupplier.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hotel Provider/src/main/java/org/example/control/InstantAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/Hotel Provider/src/main/java/org/Laura/control/InstantAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hotel Provider/src/main/java/org/example/control/JmsHotelPublisher.java" beforeDir="false" afterPath="$PROJECT_DIR$/Hotel Provider/src/main/java/org/Laura/control/JmsHotelPublisher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hotel Provider/src/main/java/org/example/control/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Hotel Provider/src/main/java/org/Laura/control/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hotel Provider/src/main/java/org/example/model/Hotel.java" beforeDir="false" afterPath="$PROJECT_DIR$/Hotel Provider/src/main/java/org/Laura/model/Hotel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hotel Provider/src/main/java/org/example/model/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/Hotel Provider/src/main/java/org/Laura/model/Location.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Prediction Provider/src/main/java/org/example/control/InstantAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/Prediction Provider/src/main/java/org/Laura/control/InstantAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Prediction Provider/src/main/java/org/example/control/JmsWeatherPublisher.java" beforeDir="false" afterPath="$PROJECT_DIR$/Prediction Provider/src/main/java/org/Laura/control/JmsWeatherPublisher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Prediction Provider/src/main/java/org/example/control/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Prediction Provider/src/main/java/org/Laura/control/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Prediction Provider/src/main/java/org/example/control/OpenWeatherMapSupplier.java" beforeDir="false" afterPath="$PROJECT_DIR$/Prediction Provider/src/main/java/org/Laura/control/OpenWeatherMapSupplier.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Prediction Provider/src/main/java/org/example/control/WeatherController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Prediction Provider/src/main/java/org/Laura/control/WeatherController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Prediction Provider/src/main/java/org/example/control/WeatherPublisher.java" beforeDir="false" afterPath="$PROJECT_DIR$/Prediction Provider/src/main/java/org/Laura/control/WeatherPublisher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Prediction Provider/src/main/java/org/example/control/WeatherSupplier.java" beforeDir="false" afterPath="$PROJECT_DIR$/Prediction Provider/src/main/java/org/Laura/control/WeatherSupplier.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Prediction Provider/src/main/java/org/example/model/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/Prediction Provider/src/main/java/org/Laura/model/Location.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Prediction Provider/src/main/java/org/example/model/Weather.java" beforeDir="false" afterPath="$PROJECT_DIR$/Prediction Provider/src/main/java/org/Laura/model/Weather.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hotel Provider/src/main/java/org/Laura/control/AmadeusSupplier.java" beforeDir="false" afterPath="$PROJECT_DIR$/Hotel Provider/src/main/java/org/Laura/control/AmadeusSupplier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hotel Provider/src/main/java/org/Laura/model/Hotel.java" beforeDir="false" afterPath="$PROJECT_DIR$/Hotel Provider/src/main/java/org/Laura/model/Hotel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +33,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;corretto-17&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/laura/OneDrive/Escritorio/Nuevo/Hotel Provider/src/main/resources&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/laura/OneDrive/Escritorio/DACD_extraordinaria&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
@@ -90,7 +56,7 @@
     <configuration name="Business" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="org.Laura.view.Main" />
       <module name="BusinessUnit" />
-      <option name="PROGRAM_PARAMETERS" value="C:\Users\laura\OneDrive\Escritorio\Nuevo" />
+      <option name="PROGRAM_PARAMETERS" value="C:\Users\laura\OneDrive\Escritorio\DACD_extraordinaria" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="org.Laura.view.*" />
@@ -118,7 +84,7 @@
     <configuration name="Datalake" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="org.Laura.control.Main" />
       <module name="DatalakeBuilder" />
-      <option name="PROGRAM_PARAMETERS" value="C:\Users\laura\OneDrive\Escritorio\Nuevo" />
+      <option name="PROGRAM_PARAMETERS" value="C:\Users\laura\OneDrive\Escritorio\DACD_extraordinaria" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="org.Laura.view.*" />
@@ -165,10 +131,10 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Hotel" />
         <item itemvalue="Application.Datalake" />
-        <item itemvalue="Application.Prediction" />
+        <item itemvalue="Application.Hotel" />
         <item itemvalue="Application.Business" />
+        <item itemvalue="Application.Prediction" />
         <item itemvalue="Application.Business" />
       </list>
     </recent_temporary>
@@ -278,7 +244,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718536919323</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Removal of zombie code and code optimization">
+      <option name="closed" value="true" />
+      <created>1718542681201</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1718542681201</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

@@ -36,8 +36,7 @@ public class AmadeusSupplier implements HotelSupplier {
     private Hotel createHotel(JsonObject hotelData, Location location) {
         JsonObject geoCode = hotelData.getAsJsonObject("geoCode");
         String provider = "hotel-provider";
-        Instant now = Instant.now();
-        return new Hotel(hotelData.get("hotelId").getAsString(), hotelData.get("name").getAsString(), hotelData.get("rating").getAsInt(), provider, now, new Location(geoCode.get("latitude").getAsDouble(), geoCode.get("longitude").getAsDouble(), location.getIsland(), hotelData.get("iataCode").getAsString()));
+        return new Hotel(hotelData.get("hotelId").getAsString(), hotelData.get("name").getAsString(), hotelData.get("rating").getAsInt(), provider, new Location(geoCode.get("latitude").getAsDouble(), geoCode.get("longitude").getAsDouble(), location.getIsland(), hotelData.get("iataCode").getAsString()));
     }
 
     @Override
