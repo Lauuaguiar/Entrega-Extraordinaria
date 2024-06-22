@@ -43,7 +43,7 @@ public class SqliteHotelStore implements HotelStore {
             createTable(connection, hotel.getLocation().getIsland());
             String tableName = hotel.getLocation().getIsland();
             String selectQuery = "SELECT * FROM \"" + tableName + "\" WHERE id=?";
-            String insertQuery = "INSERT INTO \"" + tableName + "\" (\"ID\", \"Name\", \"Stars\", \"TS\") VALUES (?, ?, ?, ?)";
+            String insertQuery = "INSERT INTO \"" + tableName + "\" (\"TS\", \"ID\", \"Name\", \"Stars\") VALUES (?, ?, ?, ?)";
             try (PreparedStatement selectStatement = connection.prepareStatement(selectQuery)) {
                 selectStatement.setString(1, hotel.getId());
                 try (ResultSet resultSet = selectStatement.executeQuery()) {

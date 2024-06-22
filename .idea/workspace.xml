@@ -6,8 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="98be1afb-3ac9-40a0-9641-e763540949ce" name="Changes" comment="Corrections after the tutorial: truncate the temperature and other variables of type double to two decimal places.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hotel Provider/src/main/java/org/laura/control/AmadeusSupplier.java" beforeDir="false" afterPath="$PROJECT_DIR$/Hotel Provider/src/main/java/org/laura/control/AmadeusSupplier.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hotel Provider/src/main/java/org/laura/model/Hotel.java" beforeDir="false" afterPath="$PROJECT_DIR$/Hotel Provider/src/main/java/org/laura/model/Hotel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Business Unit/src/main/java/org/laura/control/SqliteHotelStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/Business Unit/src/main/java/org/laura/control/SqliteHotelStore.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +51,7 @@
       <recent name="org.example.model" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Prediction">
+  <component name="RunManager" selected="Application.Datalake">
     <configuration name="Business" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="org.laura.view.Main" />
       <module name="BusinessUnit" />
@@ -131,10 +130,10 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Datalake" />
-        <item itemvalue="Application.Prediction" />
-        <item itemvalue="Application.Hotel" />
         <item itemvalue="Application.Business" />
+        <item itemvalue="Application.Datalake" />
+        <item itemvalue="Application.Hotel" />
+        <item itemvalue="Application.Prediction" />
         <item itemvalue="Application.Business" />
       </list>
     </recent_temporary>
