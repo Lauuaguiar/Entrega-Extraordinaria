@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="98be1afb-3ac9-40a0-9641-e763540949ce" name="Changes" comment="Corrections after the tutorial: truncate the temperature and other variables of type double to two decimal places.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Business Unit/src/main/java/org/laura/control/SqliteHotelStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/Business Unit/src/main/java/org/laura/control/SqliteHotelStore.java" afterDir="false" />
-    </list>
+    <list default="true" id="98be1afb-3ac9-40a0-9641-e763540949ce" name="Changes" comment="Corrections after the tutorial: truncate the temperature and other variables of type double to two decimal places." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -292,7 +289,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718686086032</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Corrections after the tutorial: truncate the temperature and other variables of type double to two decimal places.">
+      <option name="closed" value="true" />
+      <created>1719249626245</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1719249626245</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
