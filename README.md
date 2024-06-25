@@ -1,6 +1,6 @@
 # Project: Hotel Information and Weather Forecast in the Canary Islands
 ## Course: Data Science Applications Development
-## Year: 2024
+## Year: 2023-2024
 ## Degree: Bachelor's in Data Science and Engineering
 ## School: School of Computer Engineering and Mathematics
 ## University: University of Las Palmas de Gran Canaria
